@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0a0a0a"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/welcomeTextView"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:text="Welcome to XO game"
+        android:textSize="34sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="397dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="11dp"
+        app:layout_constraintBottom_toTopOf="@+id/animationLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcomeTextView">
+
+        <EditText
+            android:id="@+id/no2"
+            android:layout_width="332dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="172dp"
+            android:layout_marginBottom="60dp"
+            android:ems="10"
+            android:hint="Second player"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toTopOf="@+id/letsGo"
+            app:layout_constraintEnd_toStartOf="@+id/X"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/no1"
+            android:layout_width="332dp"
+            android:layout_height="80dp"
+            android:layout_marginBottom="32dp"
+            android:clickable="true"
+            android:ems="10"
+            android:textColor="@color/white"
+            android:hint="First player"
+            android:textColorHint="@color/white"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toTopOf="@+id/no2"
+            app:layout_constraintEnd_toStartOf="@+id/X"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/X"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="32dp"
+            android:gravity="center|center_horizontal"
+            android:text="X"
+            android:textColor="#FF0000"
+            android:textSize="65sp"
+            app:layout_constraintBottom_toTopOf="@+id/O"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/no1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/O"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="120dp"
+            android:gravity="center"
+            android:text="O"
+            android:textColor="#3F51B5"
+            android:textSize="65sp"
+            app:layout_constraintBottom_toTopOf="@+id/letsGo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/no2"
+            app:layout_constraintTop_toBottomOf="@+id/X" />
+
+        <Button
+            android:id="@+id/letsGo"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="75dp"
+            android:backgroundTint="#000000"
+            android:fontFamily="@font/allerta"
+            android:gravity="center"
+            android:onClick="letsGoClick"
+            android:text="Let's Go"
+            android:textColor="#FFFFFF"
+            android:textSize="40sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/no2" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/animationLayout"
+        android:layout_width="match_parent"
+        android:layout_height="218dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+        <TextView
+            android:id="@+id/OA"
+            android:layout_width="69dp"
+            android:layout_height="99dp"
+            android:layout_marginStart="230dp"
+            android:layout_marginTop="58dp"
+            android:layout_marginEnd="140dp"
+            android:layout_marginBottom="80dp"
+            android:gravity="center"
+            android:text="O"
+            android:textColor="#3F51B5"
+            android:textSize="65sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/XA"
+            android:layout_width="74dp"
+            android:layout_height="93dp"
+            android:layout_marginStart="103dp"
+            android:layout_marginTop="58dp"
+            android:layout_marginEnd="272dp"
+            android:layout_marginBottom="80dp"
+            android:gravity="center|center_horizontal"
+            android:text="X"
+            android:textColor="#FF0000"
+            android:textSize="65sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.303"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.692" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

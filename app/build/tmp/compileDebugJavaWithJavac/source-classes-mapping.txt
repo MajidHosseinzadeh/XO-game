@@ -1,0 +1,21 @@
+com/XO/databinding/ActivityMain2Binding.java
+ com.XO.databinding.ActivityMain2Binding
+com/XO/BuildConfig.java
+ com.XO.BuildConfig
+com/XO/databinding/FragmentSecondBinding.java
+ com.XO.databinding.FragmentSecondBinding
+com/XO/SecondFragment.java
+ com.XO.SecondFragment
+ com.XO.SecondFragment$1
+com/XO/databinding/ActivityMainBinding.java
+ com.XO.databinding.ActivityMainBinding
+com/XO/FirstFragment.java
+ com.XO.FirstFragment
+ com.XO.FirstFragment$1
+com/XO/databinding/FragmentFirstBinding.java
+ com.XO.databinding.FragmentFirstBinding
+com/XO/MainActivity.java
+ com.XO.MainActivity
+ com.XO.MainActivity$1
+com/XO/MainActivity2.java
+ com.XO.MainActivity2
